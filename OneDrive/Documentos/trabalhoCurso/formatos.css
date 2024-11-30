@@ -1,0 +1,25 @@
+body{
+    background-color: coral;
+}
+h1{
+    text-align: center; 
+}
+p{
+        text-align: center;
+        color: black;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+}
+#direito{
+    color: white;
+}
+header {
+    background-color: #333;
+    padding: 30px;  
+}
+a{
+    color: white;
+}

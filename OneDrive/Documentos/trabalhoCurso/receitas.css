@@ -1,0 +1,43 @@
+/* Definindo o container principal para usar Flexbox */
+.flex-container {
+    display: flex; /* Usando Flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha quando necessário */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Adiciona um espaço interno */
+}
+
+/* Estilo para cada item (painel de receita) */
+.item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para cada painel */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o conteúdo dentro do painel */
+}
+
+img {
+    width: 100%;  /* Ajusta a largura da imagem para ocupar 100% do espaço disponível */
+    height: auto; /* Mantém a proporção da imagem ao ajustar a largura */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando partes da imagem se necessário */
+  }
+  
+/* Responsividade - Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .flex-container {
+        justify-content: center; /* Centraliza os itens em telas médias */
+    }
+
+    .item {
+        width: 45%; /* Ajusta a largura para 45% em telas médias (como tablets) */
+    }
+}
+
+/* Responsividade para telas menores, como smartphones */
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* Painéis ocupam 100% da largura da tela em smartphones */
+    }
+}
